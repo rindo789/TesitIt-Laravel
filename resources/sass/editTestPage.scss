@@ -1,0 +1,69 @@
+* {
+    font-family: 'raleway';
+    margin: 0;
+    padding: 0;
+    font-size: 14pt;
+}
+fieldset {
+    input {
+        display: inline;
+    }
+}
+
+
+/* setting window */
+/* setting children */
+/* #setting > * {
+    padding: 5px;
+} */
+#setting {
+    width: 500px;    
+    height: auto;
+    border: 2px black solid;
+    border-radius: 25px;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    
+    display: none;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    justify-content: space-around;
+    
+    /* setting side pannel children */
+    #settingSide > * {
+        display: block;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }    
+
+    #settingGroup{
+        width: auto;
+        display: block;
+        span {
+            display: block;
+        }
+        p, input {
+            display: inline;
+        }
+
+        #overflow_group_select_container{
+            width:inherit;
+            overflow-y: auto;
+            overflow-x: visible;
+            scrollbar-width: 2px;
+            margin-top: 10px;
+            max-height: 200px;  
+        }
+    }
+    
+    #settingSchedule {
+        display: none;
+    }
+
+    #settingClose {
+    }
+}
